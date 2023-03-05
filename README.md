@@ -37,10 +37,23 @@ Este código é um modelo de machine learning que utiliza o algoritmo Naive Baye
 
 ### Como instalar
 
+> Para esta etapa, deve ter o Python 3 instalado. Para instalar acesse o [link](https://python.org.br/instalacao-windows/).
 
+```
+- Clone o repositório:
+$ git clone https://github.com/StehMaria/Naive_Bayes Naive_Bayes
 
-### Como usar
+- Entre no diretório:
+$ cd Naive_Bayes
 
+- Para instalar dependências:
+$ pip install -r requirements.txt
 
+- Execute a aplicação:
+$ python naive_bayes.py
 
+```
 
+### Resultados
+
+<img scr=plot.png>
