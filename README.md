@@ -25,11 +25,11 @@ Construir e analisar a eficácia de um modelo de machine learning utilizando bib
 
 ### Links úteis
 
-[Scikit Learn]  
-[Matplotlib]  
-[Numpy]  
-[Pandas]  
-[Naive Bayes]  
+[Scikit Learn](https://scikit-learn.org/stable/)  
+[Matplotlib](https://matplotlib.org)  
+[Numpy](https://numpy.org)  
+[Pandas](https://pandas.pydata.org)  
+[Naive Bayes](https://scikit-learn.org/stable/modules/naive_bayes.html) 
 
 ### Sobre
 
