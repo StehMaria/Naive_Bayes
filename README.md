@@ -33,7 +33,7 @@ Construir e analisar a eficácia de um modelo de machine learning utilizando bib
 
 ### Sobre
 
-Este código é um modelo de machine learning que utiliza o algoritmo Naive Bayes, da biblioteca Scikit Learn. O modelo é um aprendizado supervisionado que utiliza como classificador o GaussianNB. Nesse tipo de aprendizagem, já conhecemos a resposta e o algoritmo recebe os rótulos.
+Este código é um modelo de machine learning que utiliza o algoritmo Naive Bayes, da biblioteca Scikit Learn. O modelo é um aprendizado supervisionado que utiliza como classificador o GaussianNB. Nesse tipo de aprendizagem, o algoritmo recebe os rótulos das amostras. A base de dados é divida em treino e teste e usa o conceito de cross-validation para dividir as amostras sem perder a quantidade de amostras por classe. Para medir a acurácia do modelo foi utilizada uma matriz de confusão, que apresenta os valores verdadeirs e preditos de uma classificação. 
 
 ### Como instalar
 
