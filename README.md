@@ -33,7 +33,8 @@ Construir e analisar a eficácia de um modelo de machine learning utilizando bib
 
 ### Sobre
 
-Este código é um modelo de machine learning que utiliza o algoritmo Naive Bayes, da biblioteca Scikit Learn. O modelo é um aprendizado supervisionado que utiliza como classificador o GaussianNB. Nesse tipo de aprendizagem, o algoritmo recebe os rótulos das amostras. A base de dados é divida em treino e teste e usa o conceito de cross-validation para dividir as amostras sem perder a quantidade de amostras por classe. Para medir a acurácia do modelo foi utilizada uma matriz de confusão, que apresenta os valores verdadeirs e preditos de uma classificação. A base de dados utilizada foi a Iris, que apresenta 3 espécies com os tamanhos das pétalas e o rótulo, e possui 150 amostras sendo 50 de cada classe. Os atributos das amostras são comprimento e largura da sépala e da pétala, as classes são Íris setosa, Íris virgínica e Íris versicolor.
+Este código é um modelo de machine learning que utiliza o algoritmo Naive Bayes, da biblioteca Scikit Learn. O modelo é um aprendizado supervisionado que utiliza como classificador o GaussianNB. Nesse tipo de aprendizagem, o algoritmo recebe os rótulos das amostras. A base de dados é divida em treino e teste e usa o conceito de cross-validation para dividir as amostras sem perder a quantidade de amostras por classe.  
+Para medir a acurácia do modelo foi utilizada uma matriz de confusão, que apresenta os valores verdadeirs e preditos de uma classificação. A base de dados utilizada foi a Íris, que apresenta 3 espécies com os tamanhos das pétalas e o rótulo, e possui 150 amostras sendo 50 de cada classe. Os atributos das amostras são comprimento e largura da sépala e da pétala, as classes são Íris setosa, Íris virgínica e Íris versicolor. O algoritmo Naive Bayes utiliza a frequência das ocorrências em uma base de dados para prever uma variável de interesse e o classificador GaussianNB é indicado quando as variáveis independentes são contínuas e têm distribuição normal. Por exemplo tentar prever a espécie de Íris a partir de vários tamanhos das pétalas e sépalas.  
 
 ### Como instalar
 
@@ -58,4 +59,4 @@ $ python naive_bayes.py
 
 <img src=plot.png/>
 
-As amostras foram dividias em 70% treino e 30% teste. Das amostras de teste, o modelo acertou 15 amostras para a Íris setosa, 14 amostras para Íris virgínica e 1 amostra para Íris versicolor e 14 amostras para Íris versicolor e 1 amostra classificada para Íris virgínica.
+As amostras foram dividias em 70% treino e 30% teste. Das amostras de teste, o modelo acertou 15 amostras para a Íris setosa, 14 amostras para Íris virgínica e 1 amostra para Íris versicolor e 14 amostras para Íris versicolor e 1 amostra classificada para Íris virgínica. A acurácia do modelo foi de 0.955556 ou 96%.
