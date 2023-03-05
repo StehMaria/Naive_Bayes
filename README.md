@@ -56,4 +56,6 @@ $ python naive_bayes.py
 
 ### Resultados
 
-<img scr=plot.png>
+<img src=plot.png/>
+
+As amostras foram dividias em 70% treino e 30% teste. Das amostras de teste, o modelo acertou 15 amostras para a Íris setosa, 14 amostras para Íris virgínica e 1 amostra para Íris versicolor e 14 amostras para Íris versicolor e 1 amostra classificada para Íris virgínica.
