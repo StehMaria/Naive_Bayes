@@ -30,14 +30,15 @@ Construir e analisar a eficácia de um modelo de machine learning utilizando bib
   - [O Termo "Naive" (Ingênuo)](#o-termo-naive-ingênuo)
   - [O Truque do Logaritmo (Log Trick)](#o-truque-do-logaritmo-log-trick)
 - [Tratamento de Problemas e Suavização de Laplace](#tratamento-de-problemas-e-suavização-de-laplace)
+ - [Solução: Suavização de Laplace (Laplace Smoothing)](#solucao-suavização-de-laplace-laplace-smoothing)
 - [Variações do Modelo](#variações-do-modelo)
 - [Combinação de Atributos Diferentes](#combinação-de-atributos-diferentes)
 - [Computação Distribuída](#computação-distribuída)
 - [Projeto](#projeto)
-- [Sobre](#sobre)
-- [Como instalar](#como-instalar)
-- [Resultados](#resultados)
-- [Links úteis](#links-úteis)
+ - [Sobre](#sobre)
+ - [Como instalar](#como-instalar)
+ - [Resultados](#resultados)
+ - [Links úteis](#links-úteis)
 
 
 
