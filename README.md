@@ -79,9 +79,9 @@ O que ela significa de forma simples:
 
 Esta fórmula serve para calcular a "nota final" (a probabilidade) de o paciente ter uma doença específica, a classe $C_k$, com base nos sintomas que ele está apresentando (as características $x_1, ..., x_n$).
 
-Para chegar nessa nota, o algoritmo faz uma multiplicação simples: ele pega a chance geral daquela doença existir no mundo (a probabilidade a priori, $P(C_k)$) e multiplica pela chance de cada um dos sintomas aparecer em alguém que realmente tem essa doença ($\prod P(x_i|C_k)$).
+Para chegar nessa nota, o algoritmo faz uma multiplicação simples: ele pega a chance geral daquela doença existir no mundo, a probabilidade a priori $P(C_k)$, e multiplica pela chance de cada um dos sintomas aparecer em alguém que realmente tem essa doença $\prod P(x_i|C_k)$.
 
-O símbolo ($\propto$) significa apenas "proporcional a", o que na prática quer dizer: "não precisamos calcular a conta inteira com o denominador porque ele é igual para todas as doenças, então focar só na parte de cima já resolve o nosso problema".
+O símbolo $\propto$ significa apenas "proporcional a", o que na prática quer dizer: "não precisamos calcular a conta inteira com o denominador porque ele é igual para todas as doenças, então focar só na parte de cima já resolve o nosso problema".
 
 2. A segunda fórmula: O Martelo da Decisão (O argmax)
 
@@ -89,11 +89,11 @@ $$\hat{y} = \arg\max_{k \in [1, ..., K]} P(C_k) \prod_{i=1}^{n} P(x_i|C_k)$$
 
 O que ela significa de forma simples:
 
-Depois que você usou a primeira fórmula e calculou a "nota final" para todas as doenças possíveis (Gripe, Dengue, Covid, etc.), você precisa tomar uma decisão e dar o diagnóstico final ($\hat{y}$).1
+Depois que você usou a primeira fórmula e calculou a "nota final" para todas as doenças possíveis (Gripe, Dengue, Covid, etc.), você precisa tomar uma decisão e dar o diagnóstico final $\hat{y}$.
 
 É aí que entra o argmax: "olhe para todas as notas que calculamos e escolha a maior de todas". O 
 $k \in [1, ..., K]$ significa olhar a lista de todas as opções de doenças disponíveis e 
-$\arg\max$ é a ordem para o sistema: "Certo, a Gripe deu nota 0.15, a Dengue deu 0.75 e a Covid deu 0.10. O maior argumento (a maior nota) é 0.75, então o diagnóstico final ($\hat{y}$) é Dengue!".  
+$\arg\max$ é a ordem para o sistema: "Certo, a Gripe deu nota 0.15, a Dengue deu 0.75 e a Covid deu 0.10. O maior argumento (a maior nota) é 0.75, então o diagnóstico final $\hat{y}$ é Dengue!".  
 
 ### O Termo "Naive" (Ingênuo)
 O algoritmo é chamado de "ingênuo" porque ele assume uma **independência condicional absoluta** entre todos os atributos do objeto dado a classe. Embora essa suposição raramente seja puramente verdadeira na realidade, ela traz uma enorme vantagem computacional: reduz a complexidade do sistema de ordem exponencial $O(2^n)$ para ordem linear $O(n)$.
