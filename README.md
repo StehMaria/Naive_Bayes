@@ -33,31 +33,30 @@ Construir e analisar a eficácia de um modelo de machine learning utilizando bib
 - [Variações do Modelo](#variações-do-modelo)
 - [Combinação de Atributos Diferentes](#combinação-de-atributos-diferentes)
 - [Computação Distribuída](#computação-distribuída)
+- [Projeto](#projeto)
 - [Sobre](#sobre)
 - [Como instalar](#como-instalar)
 - [Resultados](#resultados)
 - [Links úteis](#links-úteis)
 
 
----
 
 ## 🧠 Fundamentos Teóricos
 
 O Naive Bayes é fundamentado em conceitos de probabilidade condicional e na **Regra de Bayes**:
 
-* **Probabilidade a Priori (ou Incondicional):** Reflete a probabilidade de uma proposição ocorrer na ausência de qualquer outra informação. Pode-se pensar como a chance de algo acontecer antes de ter qualquer pista ou informação nova sobre o caso. Como um palpite inicial baseado puramente no histórico geral. Por exemplo, qual é a chance de chover hoje, no geral, olhando apenas as estatísticas do ano passado?
-* **Probabilidade Condicional:** Trata-se da probabilidade de um evento ocorrer dado que outro evento já aconteceu. É quando uma informação nova entra em cena e muda a chance de um evento acontecer. A pergunta agora passa a ser: "Qual é a chance de A acontecer, sabendo que B já aconteceu?". É descrita matematicamente pela fórmula:
+* **Probabilidade a Priori (ou Incondicional):** Reflete a probabilidade de uma proposição ocorrer na ausência de qualquer outra informação. Pode-se pensar como a chance de algo acontecer antes de ter qualquer pista ou informação nova sobre o caso. Como um palpite inicial baseado puramente no histórico geral. Por exemplo, qual é a chance de chover hoje, no geral, olhando apenas as estatísticas do ano passado?  
+* **Probabilidade Condicional:** Trata-se da probabilidade de um evento ocorrer dado que outro evento já aconteceu. É quando uma informação nova entra em cena e muda a chance de um evento acontecer. A pergunta agora passa a ser: "Qual é a chance de A acontecer, sabendo que B já aconteceu?". É descrita matematicamente pela fórmula:  
   $$P(a|b) = \frac{P(a \wedge b)}{P(b)}$$
-  O cálculo matemático ($P(a|b)$) simplesmente pega a chance de as duas coisas acontecerem juntas e divide pelo peso da pista que já tem em mãos ($P(b)$). Por exemplo: a chance de você ter uma cárie é uma, mas se você já está sentindo uma dor de dente (sua pista), a chance de ser uma cárie aumenta muito.
-* **Regra de Bayes:** É a base dos sistemas modernos de inferência probabilística. Funciona como uma máquina de atualizar certezas. Ela nos ensina a recalcular a chance de algo ser real (a causa) a partir dos sinais ou pistas que estamos vendo (o efeito). A fórmula matemática apenas cruza três coisas básicas: a chance da pista aparecer se a causa for real (verossimilhança), o nosso palpite inicial sobre a causa (a priori) e o peso geral dessa pista existir sozinha (evidência). Ela serve para responder perguntas como: "Se o paciente está com o pescoço rígido (efeito), qual é a chance real de ser torcicolo (causa)?".Ela relaciona as probabilidades condicionais e a priori da seguinte forma:
-  $$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$$
-  Onde:
-  * $P(Y|X)$ é a probabilidade **Posteriori**.
-  * $P(X|Y)$ é a **Verossimilhança** (*Likelihood*).
-  * $P(Y)$ é a probabilidade **A Priori** (*Priori*).
-  * $P(X)$ é a **Evidência** (que funciona como um denominador constante e não depende das classes).
+  O cálculo matemático ($P(a|b)$) simplesmente pega a chance de as duas coisas acontecerem juntas e divide pelo peso da pista que já tem em mãos ($P(b)$). Por exemplo: a chance de você ter uma cárie é uma, mas se você já está sentindo uma dor de dente (sua pista), a chance de ser uma cárie aumenta muito.  
+* **Regra de Bayes:** É a base dos sistemas modernos de inferência probabilística. Funciona como uma máquina de atualizar certezas. Ela nos ensina a recalcular a chance de algo ser real (a causa) a partir dos sinais ou pistas que estamos vendo (o efeito). A fórmula matemática apenas cruza três coisas básicas: a chance da pista aparecer se a causa for real (verossimilhança), o nosso palpite inicial sobre a causa (a priori) e o peso geral dessa pista existir sozinha (evidência). Ela serve para responder perguntas como: "Se o paciente está com o pescoço rígido (efeito), qual é a chance real de ser torcicolo (causa)?".Ela relaciona as probabilidades condicionais e a priori da seguinte forma:  
+  $$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$$  
+  Onde:  
+  * $P(Y|X)$ é a probabilidade **Posteriori**.  
+  * $P(X|Y)$ é a **Verossimilhança** (*Likelihood*).  
+  * $P(Y)$ é a probabilidade **A Priori** (*Priori*).  
+  * $P(X)$ é a **Evidência** (que funciona como um denominador constante e não depende das classes).  
 
----
 
 ## 🤖 O Algoritmo Naive Bayes
 
@@ -113,7 +112,6 @@ Tentar multiplicar 0,002 por 0,01 e depois por 0,003... o resultado vai virar um
 
 Para resolver isso, o algoritmo aplica uma transformação matemática chamada Logaritmo. A propriedade mágica do logaritmo transforma multiplicações em somas. Em vez de fazer o computador multiplicar várias frações minúsculas e perigosas, ele passa a somar os equivalentes dessas probabilidades. O resultado final é exatamente o mesmo, mas o computador faz a conta com total segurança e sem nenhuma chance de errar por causa de números pequenos demais.
 
----
 
 ## 🧼 Tratamento de Problemas e Suavização de Laplace
 
@@ -132,7 +130,6 @@ Para resolver isso, adiciona-se 1 ao numerador e soma-se o número total de atri
 
 $$P(C|x) = \frac{\text{contagem}(x, C) + 1}{\text{contagem}(C) + n + 1}$$
 
----
 
 ## 📊 Variações do Modelo
 
@@ -144,7 +141,6 @@ Diferentes tipos de dados exigem diferentes distribuições de probabilidade par
 | **Multinomial** | Dados Discretos (ex: contagens) |
 | **Gaussian** | Dados Contínuos |
 
----
 
 ## 🔄 Combinação de Atributos Diferentes
 
@@ -167,7 +163,6 @@ Para o Gênero e Histórico de Inadimplência (categóricos), ele usa um modelo 
 
 O algoritmo calcula a probabilidade para os números de um lado, a probabilidade para as categorias do outro e, graças à regra de independência do Naive Bayes, ele simplesmente multiplica os resultados dessas duas partes para dar o veredito final.  
 
----
 
 ## ⚡ Computação Distribuída
 
@@ -175,7 +170,7 @@ Para lidar com grandes volumes de dados (*large datasets*), existem bibliotecas 
 * Elas utilizam parâmetros limitados e probabilidades logarítmicas como método de sumarização.
 * O pacote `Scikit-Learn` possui implementações com "ajuste parcial" (*partial tuning* ou `partial_fit`) voltadas para cálculos fora da memória principal (*out-of-core*) executados em paralelo.
 
-
+## 💻 Projeto
 
 ### Sobre
 
