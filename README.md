@@ -50,7 +50,7 @@ O Naive Bayes é fundamentado em conceitos de probabilidade condicional e na **R
 
   $$P(a|b) = \frac{P(a \wedge b)}{P(b)}$$
 
-  O cálculo matemático ($P(a|b)$) simplesmente pega a chance de as duas coisas acontecerem juntas e divide pelo peso da pista que já tem em mãos ($P(b)$). Por exemplo: a chance de você ter uma cárie é uma, mas se você já está sentindo uma dor de dente (sua pista), a chance de ser uma cárie aumenta muito.  
+  O cálculo matemático $P(a|b)$ simplesmente pega a chance de as duas coisas acontecerem juntas e divide pelo peso da pista que já tem em mãos $P(b)$. Por exemplo: a chance de você ter uma cárie é uma, mas se você já está sentindo uma dor de dente (sua pista), a chance de ser uma cárie aumenta muito.  
 * **Regra de Bayes:** É a base dos sistemas modernos de inferência probabilística. Funciona como uma máquina de atualizar certezas. Ela nos ensina a recalcular a chance de algo ser real (a causa) a partir dos sinais ou pistas que estamos vendo (o efeito). A fórmula matemática apenas cruza três coisas básicas: a chance da pista aparecer se a causa for real (verossimilhança), o nosso palpite inicial sobre a causa (a priori) e o peso geral dessa pista existir sozinha (evidência). Ela serve para responder perguntas como: "Se o paciente está com o pescoço rígido (efeito), qual é a chance real de ser torcicolo (causa)?".Ela relaciona as probabilidades condicionais e a priori da seguinte forma:  
 
   $$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$$  
@@ -77,7 +77,7 @@ $$P(C_k|x_1, ..., x_n) \propto P(C_k) \prod_{i=1}^{n} P(x_i|C_k)$$
 
 O que ela significa de forma simples:
 
-Esta fórmula serve para calcular a "nota final" (a probabilidade) de o paciente ter uma doença específica (a classe $C_k$) com base nos sintomas que ele está apresentando (as características $x_1, ..., x_n$).
+Esta fórmula serve para calcular a "nota final" (a probabilidade) de o paciente ter uma doença específica, a classe $C_k$, com base nos sintomas que ele está apresentando (as características $x_1, ..., x_n$).
 
 Para chegar nessa nota, o algoritmo faz uma multiplicação simples: ele pega a chance geral daquela doença existir no mundo (a probabilidade a priori, $P(C_k)$) e multiplica pela chance de cada um dos sintomas aparecer em alguém que realmente tem essa doença ($\prod P(x_i|C_k)$).
 
