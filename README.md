@@ -47,9 +47,12 @@ O Naive Bayes é fundamentado em conceitos de probabilidade condicional e na **R
 
 * **Probabilidade a Priori (ou Incondicional):** Reflete a probabilidade de uma proposição ocorrer na ausência de qualquer outra informação. Pode-se pensar como a chance de algo acontecer antes de ter qualquer pista ou informação nova sobre o caso. Como um palpite inicial baseado puramente no histórico geral. Por exemplo, qual é a chance de chover hoje, no geral, olhando apenas as estatísticas do ano passado?  
 * **Probabilidade Condicional:** Trata-se da probabilidade de um evento ocorrer dado que outro evento já aconteceu. É quando uma informação nova entra em cena e muda a chance de um evento acontecer. A pergunta agora passa a ser: "Qual é a chance de A acontecer, sabendo que B já aconteceu?". É descrita matematicamente pela fórmula:  
+
   $$P(a|b) = \frac{P(a \wedge b)}{P(b)}$$
+
   O cálculo matemático ($P(a|b)$) simplesmente pega a chance de as duas coisas acontecerem juntas e divide pelo peso da pista que já tem em mãos ($P(b)$). Por exemplo: a chance de você ter uma cárie é uma, mas se você já está sentindo uma dor de dente (sua pista), a chance de ser uma cárie aumenta muito.  
 * **Regra de Bayes:** É a base dos sistemas modernos de inferência probabilística. Funciona como uma máquina de atualizar certezas. Ela nos ensina a recalcular a chance de algo ser real (a causa) a partir dos sinais ou pistas que estamos vendo (o efeito). A fórmula matemática apenas cruza três coisas básicas: a chance da pista aparecer se a causa for real (verossimilhança), o nosso palpite inicial sobre a causa (a priori) e o peso geral dessa pista existir sozinha (evidência). Ela serve para responder perguntas como: "Se o paciente está com o pescoço rígido (efeito), qual é a chance real de ser torcicolo (causa)?".Ela relaciona as probabilidades condicionais e a priori da seguinte forma:  
+
   $$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$$  
   Onde:  
   * $P(Y|X)$ é a probabilidade **Posteriori**.  
