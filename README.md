@@ -171,7 +171,7 @@ O algoritmo calcula a probabilidade para os números de um lado, a probabilidade
 
 Para lidar com grandes volumes de dados (*large datasets*), existem bibliotecas capazes de computar os modelos de Naive Bayes de forma paralela. 
 * Elas utilizam parâmetros limitados e probabilidades logarítmicas como método de sumarização.
-* O pacote `Scikit-Learn` possui implementações com "ajuste parcial" (*partial tuning* ou `partial_fit`) voltadas para cálculos fora da memória principal (*out-of-core*) executados em paralelo.
+* O pacote `Scikit-Learn` possui implementações com "ajuste parcial" (*partial tuning* ou *partial_fit*) voltadas para cálculos fora da memória principal (*out-of-core*) executados em paralelo.
 
 ## 💻 Projeto
 
