@@ -3,11 +3,6 @@
 <img width=15% src=http://ForTheBadge.com/images/badges/made-with-python.svg>
 </div>
 
-<p align="right">
-  <img src="https://shields.io" alt="Built With Love">
-  <img src="https://shields.io" alt="Made With Python">
-</p>
-
 <h1 align=center>Algoritmo Naive Bayes 🌷</h1>
 
 ### Ferramentas:
