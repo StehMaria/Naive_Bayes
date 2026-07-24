@@ -13,7 +13,7 @@
 ### Objetivo:
 Construir e analisar a eficácia de um modelo de machine learning utilizando bibliotecas de aprendizado de máquina, estatística e visualização de dados com o dataset Iris.csv.
 
-### User Storie:
+### User Story:
 
 -   [ ] Como cientista de dados, quero avaliar o desempenho do modelo de machine learning utilizando o algoritmo naive bayes.
 
